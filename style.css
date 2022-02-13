@@ -79,7 +79,7 @@ a:hover {
     min-height: 30px;
 }
 
-.checkbox {
+input[type="checkbox"] {
     width: 22px;
     height: 22px;
     min-width: 22px;
