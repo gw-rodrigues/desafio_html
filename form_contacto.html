@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav role="navigation" aria-label="Navigation">
+        <a href="glossario.html">Glossario</a>
+        <a href="form_contacto.html">Formaulario Contacto</a>
+        <a href="lista_compras.html">Lista Compras</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="blog_post.html">Blog Post</a>
+    </nav>
+    <main class="container" aria-label="Main container">
+        <h1 class="page-title" aria-label="Page title">Formulario de contacto</h1>
+        <form action="form_contacto.html" aria-label="Contact Form">
+            <fieldset class="gl-container">
+                  <legend>Entre em contacto</legend>
+                  <label for="assunto">Assunto:</label>
+                  <select name="assunto" id="assunto">
+                    <option>Assunto 1</option>
+                    <option>Assunto 2</option>
+                    <option>Assunto 3</option>
+                    <option>Assunto 4</option>
+                  </select>
+                  <br><br>
+                  <label for="name">Nome completo:</label>
+                  <br>
+                  <input name="name" id="name" type="text">
+                  <br><br>
+                  <label for="email">Email:</label>
+                  <br>
+                  <input name="email" id="email" type="email">
+                  <br><br>
+                  <label for="message">Mensagem:</label>
+                  <br>
+                  <textarea name="message" id="message" cols="38" rows="010">
+                    Escreva aqui...
+                  </textarea>
+                  <br><br>
+                  <input class="checkbox" type="checkbox" name="newsletter" id="newsletter">
+                  <label class="checkbox-label" for="newsletter">Aceito receber novidades por email.</label>
+                  <br>
+                  <br>
+                  <br>
+                  <button type="submit">Enviar</button>    
+            </fieldset>
+         </form>
+    </main>
+</body>
+</html>

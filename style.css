@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgba(0,212,255,1);
+    background: fixed linear-gradient(180deg, rgba(12,3,170,1) 3%, rgba(0,0,205,1) 32%, rgba(1,200,247,1) 91%, rgba(0,212,255,1) 100%);
+    color: beige;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+a {
+    color: beige;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 238, 255);
+}
+
+.container {
+    width: 70%;
+    margin: 3rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form{
+    width: 100%;
+}
+
+.page-title {
+    margin: 2rem;
+}
+
+.gl-container {
+    width: 100%;
+    background: rgba(52, 52, 148, 0.5);
+    border: 1px white solid;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.gl-container .title {
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+}
+
+.gl-container .description {
+    padding: 1rem;
+    text-align: justify;
+    border: 1px rgba(255,255,255,0.5) solid;
+    border-radius: 5px;
+}
+
+.gl-container .description:hover {
+    border-color: rgb(0, 238, 255);
+}
+
+
+ input {
+    width: 50%;
+    min-width: 200px;
+    min-height: 30px;
+}
+
+.checkbox {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    min-height: 22px;
+}
+
+textarea {
+    width: 100%;
+    min-width: 200px;
+}
+
+input, textarea {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px beige solid;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px beige solid;
+}
+
+button:hover {
+    background-color: rgb(192, 192, 192);
+}
