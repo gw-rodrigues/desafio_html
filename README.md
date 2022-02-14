@@ -22,7 +22,7 @@ Essa é uma série de desafios básicos para que você possa praticar seus conhe
 
 ## Aprendizado:
 <ul>
-<li>Utilizacao boderx, radius, flex, inputs, figure...</li>
+<li>Utilizacao border, radius, flex, inputs, figure...</li>
 <li>Show&Hidde remove, add classes com javacript</li>
 <li>Criacao de forms</li>
 <li>Sematica HTML</li>
