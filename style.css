@@ -133,3 +133,13 @@ button:hover {
 .hidden {
     display: none !important;
 }
+
+.two-col {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.two-col > * {
+    flex-basis: 50%;
+}
