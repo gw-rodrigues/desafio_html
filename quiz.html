@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav role="navigation" aria-label="Navigation">
+        <a href="glossario.html">Glossario</a>
+        <a href="form_contacto.html">Formaulario Contacto</a>
+        <a href="lista_compras.html">Lista Compras</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="blog_post.html">Blog Post</a>
+    </nav>
+    <main class="container" aria-label="Main container">
+        <div class="gl-container" aria-label="Quiz">
+        <h1 class="page-title" aria-label="Page title">Quiz aobre HTML</h1>
+        <hr>
+            <form class="quiz" action="quiz.html" aria-label="Quiz form">
+                <ol id="quiz" aria-label="Quiz questions">
+                    <li id="question-1">
+                      <h3><a href="#" onclick="toggle_visibility(1)">Pergunta 1</a></h3>
+                      <div class="answers">
+                        <input type="radio" name="question-1" id="question-1-a" value="A" />
+                        <label for="question-1-a">A) opção </label>
+                      </div>
+                      <div class="answers">
+                        <input type="radio" name="question-1" id="question-1-b" value="B" />
+                        <label for="question-1-b">B) opção 2</label>
+                      </div>
+                      <div class="answers">
+                        <input type="radio" name="question-1" id="question-1-c" value="C" />
+                        <label for="question-1-c">C) opção 3</label>
+                      </div>
+                      <div class="answers">
+                        <input type="radio" name="question-1" id="question-1-d" value="D" />
+                        <label for="question-1-d">D) opção 4</label>
+                      </div>
+                    </li>
+                    
+                    <li id="question-2">
+                        <h3><a href="#" onclick="toggle_visibility(2)">Pergunta 2</a></h3>
+                        <div class="answers">
+                          <input type="radio" name="question-2" id="question-2-a" value="A" />
+                          <label for="question-2-a">A) opção 1</label>
+                        </div>
+                        <div class="answers">
+                          <input type="radio" name="question-2" id="question-2-b" value="B" />
+                          <label for="question-2-b">B) opção 2</label>
+                        </div>
+                        <div class="answers">
+                          <input type="radio" name="question-2" id="question-2-c" value="C" />
+                          <label for="question-2-c">C) opção 3</label>
+                        </div>
+                        <div class="answers">
+                          <input type="radio" name="question-2" id="question-2-d" value="D" />
+                          <label for="question-2-d">D) opção 4</label>
+                        </div>
+                      </li>
+
+                      <li id="question-3">
+                        <h3><a href="#" onclick="toggle_visibility(3)">Pergunta 3</a></h3>
+                        <div class="answers">
+                          <input type="radio" name="question-3" id="question-3-a" value="A" />
+                          <label for="question-3-a">A) opção 1</label>
+                        </div>
+                        <div class="answers">
+                          <input type="radio" name="question-3" id="question-3-b" value="B" />
+                          <label for="question-3-b">B) opção 2</label>
+                        </div>
+                        <div class="answers">
+                          <input type="radio" name="question-3" id="question-3-c" value="C" />
+                          <label for="question-3-c">C) opção 3</label>
+                        </div>
+                        <div class="answers">
+                          <input type="radio" name="question-3" id="question-3-d" value="D" />
+                          <label for="question-3-d">D) opção 4</label>
+                        </div>
+                      </li>
+
+                      <li id="question-4">
+                        <h3><a href="#" onclick="toggle_visibility(4)">Pergunta 4</a></h3>
+                        <div class="answers">
+                          <input type="radio" name="question-4" id="question-4-a" value="A" />
+                          <label for="question-4-a">A) opção 1</label>
+                        </div>
+                        <div class="answers">
+                          <input type="radio" name="question-4" id="question-4-b" value="B" />
+                          <label for="question-4-b">B) opção 2</label>
+                        </div>
+                        <div class="answers">
+                          <input type="radio" name="question-4" id="question-4-c" value="C" />
+                          <label for="question-4-c">C) opção 3</label>
+                        </div>
+                        <div class="answers">
+                          <input type="radio" name="question-4" id="question-4-d" value="D" />
+                          <label for="question-4-d">D) opção 4</label>
+                        </div>
+                      </li>
+                  </ol>
+                  <button type="submit">Enviar</button>
+                  <script>
+                        function toggle_visibility(id) {
+                            var quiz = document.getElementById('quiz')                       
+                            for (const question of quiz.children) {
+                                for (const answers of question.querySelectorAll('.answers')) {
+                                    if(question.id != 'question-'+id){
+                                        answers.classList.remove('show')
+                                        answers.classList.add('hidden')
+                                    }else{
+                                        answers.classList.add('show')
+                                        answers.classList.remove('hidden')
+                                    }   
+                                }   
+                            }
+                        }
+                  </script>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
